@@ -31,9 +31,13 @@
                         @if (ViewContext.HttpContext.Session.GetInt32("userid") != null)
                         {
 
-                            @*<li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Note" asp-action="Index">Notes</a>
-                            </li>*@
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Expense" asp-action="AddExpense">Add Expense</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Expense" asp-action="ReportExpense">Report Expense</a>
+                            </li>
 
                             <li class="nav-item dropdown ms-auto me-5">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
